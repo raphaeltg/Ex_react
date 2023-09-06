@@ -3,16 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvide} from 'react-router-dom'
-import Home from './route/Home/index.jsx'
+import Home from './routes/Home/index.jsx'
 import Produtos from './routes/Produtos/index.jsx'
 import Error from './routes/Error/index.jsx'
 import EditarProduto from './routes/EditarProduto/index.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+
 
 const router = createBrowserRouter([
 
@@ -38,3 +34,9 @@ const router = createBrowserRouter([
   }
 
 ])
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvide router ={router} />
+  </React.StrictMode>,
+)
