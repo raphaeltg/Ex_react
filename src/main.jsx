@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvide} from 'react-router-dom'
 import Home from './routes/Home/index.jsx'
 import Produtos from './routes/Produtos/index.jsx'
 import Error from './routes/Error/index.jsx'
-import EditarProduto from './routes/EditarProduto/index.jsx'
+import EditarProdutos from './routes/EditarProdutos/index.jsx'
 
 
 
@@ -23,12 +23,12 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: "/produtos",
+        path: "/produtos",  
         element: <Produtos/>
       },
       {
         path: "/produtos/editar/:id",
-        element: <EditarProduto/>
+        element: <EditarProdutos/>
       },
     ]
   }
