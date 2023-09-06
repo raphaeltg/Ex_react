@@ -10,7 +10,7 @@ function App(){
     <>
       <Menu/>
       <Outlet/>
-      <Rodapé/>
+      <Rodape/>
     </>
   )
 }
